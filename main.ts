@@ -11,6 +11,13 @@ let strip = neopixel.create(DigitalPin.P15, 4, NeoPixelMode.RGB)
 strip.setBrightness(20)
 music.setVolume(15)
 music.setTempo(240)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    `)
 basic.forever(function () {
     strip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
     strip.setPixelColor(3, neopixel.colors(NeoPixelColors.White))
